@@ -27,6 +27,9 @@
                                 <rect key="frame" x="67" y="289" width="241" height="149"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Student"/>
+                                <connections>
+                                    <segue destination="GGo-Yo-lZl" kind="show" id="HNB-P5-yyx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0t-If-NNb">
                                 <rect key="frame" x="293" y="289" width="241" height="149"/>
@@ -39,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="313"/>
+            <point key="canvasLocation" x="237" y="313"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ooV-uR-qp2">
