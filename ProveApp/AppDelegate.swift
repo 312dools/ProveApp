@@ -5,7 +5,7 @@
 //  Created by Michael Doolan on 3/17/16.
 //  Copyright © 2016 Michael Doolan. All rights reserved.
 //
-// Joshua's Branch!
+// Master Branch!
 
 import UIKit
 
