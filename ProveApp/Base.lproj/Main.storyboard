@@ -36,6 +36,9 @@
                                 <rect key="frame" x="463" y="349" width="117" height="149"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="Teacher"/>
+                                <connections>
+                                    <segue destination="ZhS-CE-2Jr" kind="show" id="epa-Er-mVH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -64,26 +67,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Proof" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-7h-4zm">
-                                <rect key="frame" x="208" y="28" width="184" height="93"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Student Proof" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-7h-4zm">
+                                <rect key="frame" x="20" y="28" width="560" height="93"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB5-iJ-a99">
-                                <rect key="frame" x="43" y="20" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB5-iJ-a99">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="btC-6h-VUg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Statement 1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZM5-Jh-Sjt">
+                                <rect key="frame" x="20" y="95" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gFb-7h-4zm" firstAttribute="trailing" secondItem="tom-TP-8LO" secondAttribute="trailingMargin" id="5SN-Hz-l5z"/>
+                            <constraint firstItem="EB5-iJ-a99" firstAttribute="leading" secondItem="tom-TP-8LO" secondAttribute="leadingMargin" id="CoS-zk-dQ4"/>
+                            <constraint firstItem="gFb-7h-4zm" firstAttribute="leading" secondItem="tom-TP-8LO" secondAttribute="leadingMargin" id="ioT-8g-2uW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUs-ZG-7B8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="879" y="313"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qfA-Iz-yds">
+            <objects>
+                <viewController id="ZhS-CE-2Jr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z74-MD-y60"/>
+                        <viewControllerLayoutGuide type="bottom" id="jgW-db-gSx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Yb-IB-Bvx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Teacher Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-XI-4Qn">
+                                <rect key="frame" x="20" y="28" width="560" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9K-uk-Z8d">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="QOa-G5-GL5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N9K-uk-Z8d" firstAttribute="leading" secondItem="1Yb-IB-Bvx" secondAttribute="leadingMargin" id="14K-r9-568"/>
+                            <constraint firstItem="fy7-XI-4Qn" firstAttribute="leading" secondItem="1Yb-IB-Bvx" secondAttribute="leadingMargin" id="el7-ij-WFu"/>
+                            <constraint firstItem="fy7-XI-4Qn" firstAttribute="trailing" secondItem="1Yb-IB-Bvx" secondAttribute="trailingMargin" id="vTf-zt-yRH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FQo-US-bcV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLu-uG-PIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="960"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QOa-G5-GL5"/>
+    </inferredMetricsTieBreakers>
 </document>
